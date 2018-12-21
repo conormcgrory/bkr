@@ -7,9 +7,14 @@ authors = ["Conor McGrory <cpmcgrory@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.6"
 toml = "^0.10.0"
+sh = "^1.12"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.0"
+ipython = "^7.2"
+
+[tool.poetry.scripts]
+bkr = "bkr.cli:main"
 
 [build-system]
 requires = ["poetry>=0.12"]
